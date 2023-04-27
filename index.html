@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="responsive.css">
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <title>Frontend Mentor | Interactive card details form</title>
+
+</head>
+<body>
+  <main class="container">
+    <div class="bg-img">
+      <div class="content">
+        <div class="card-front">
+          <img class="logo" src="./images/card-logo.svg" alt="">
+          <span class="number">0000 0000 0000 0000</span>
+          <span class="name">Jane Appleseed</span>
+          <span class="date">
+            <span class="mm">00</span>
+            /
+            <span class="yy">00</span>
+          </span>
+        </div>
+
+        <div class="card-back">
+          <span class="number-back">000</span>
+        </div>
+        <div class="form-card-div">
+          <form id="form" class="form-card" action="">
+            <fieldset>
+              <label for="name">CARDHOLDER NAME</label>
+              <input id="name" type="text" placeholder="e.g. Jane Appleseed" required>
+              <p class="error">Can't be blank</p>
+              
+              <label for="number">CARD NUMBER</label>
+              <input id="number" type="number" maxlength="16" placeholder="e.g. 1234 5678 9123 0000" required >
+              <p class="error">Wrong format, letters only</p>
+            </fieldset>
+            <div class="dates">
+              <label for="date" >EXP. DATE (MM/YY) </label>
+              <label for="number" >CVC</label>
+              <input type="number" maxlength="2" min="1" max="12" placeholder="MM" required>
+              <input type="number" minlength="2" maxlength="2" placeholder="YY" required>
+              <input type="number" maxlength="3" placeholder="e.g. 123" required>
+              <p class="error">Can't be blank</p>
+              <p class="error">Can't be blank</p>
+            </div>
+            <button id="confirm" class="confirm" type="submit" onclick="text()">Confirm</button>
+          </form>
+        
+          <div class="success">
+            <img src="images/icon-complete.svg" alt="" srcset="">
+            <h2> Thank you!</h2>
+            <h3>We've added your card details </h3>
+            <button id="continue" class="continue confirm" type="button">Continue</button>
+          </div>
+        </div>
+        <footer class="attribution">
+          <p>
+          Challenge by 
+            <a href="https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw" target="_blank">Frontend Mentor</a> 
+            - Coded by
+            <a href="#">Yamile Acuña</a>
+          </p>
+        </footer>
+      </div>
+    </div>
+    
+  </main>
+  
+  
+  <script src="main.js"></script>
+</body>
+</html>

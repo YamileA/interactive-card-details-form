@@ -1,0 +1,95 @@
+@media screen and (min-width: 800px) {
+    .container{
+        grid-template-columns: 33% 4fr;
+        grid-template-rows: 1fr;
+    }
+    .bg-img{
+        background-image: url(images/bg-main-desktop.png);
+        background-size: cover;
+        grid-area: 1/1/2/2;
+    }
+    .content{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 0.2fr;
+        /*justify-content: center;*/
+        height: 100vh;
+        transform: scale(0.7);
+        row-gap: 2rem;
+        column-gap: 7rem;
+        position: absolute;
+    }
+
+    .card-front{
+        grid-area:1/1/2/2;
+        align-self: flex-end;
+        order: 0;
+        transform: none;
+    }
+
+    .card-back{
+        grid-area:2/1/2/2;
+        align-self: flex-start;
+        margin-left: 60px;
+        transform: none;
+    }
+
+    .form-card-div{
+        width: 35vw;
+        grid-area: 1/2/3/3;
+        place-content: center;
+        display: grid; 
+    }
+
+    .success{
+        transform: translateX(5rem);
+    }
+
+    .continue{
+        width: 130%;
+    }
+
+    .attribution{
+        grid-area: 3/2/3/3;
+    }
+
+}
+
+@media screen and (max-width: 400px) {
+    .content{
+        /*transform: scale(0.7) translateX(-4rem) translateY(-2rem);
+        transform: scale(0.7) translateX(-4rem) translateY(2rem);
+        */
+        transform: scale(0.7) translateX(-4rem);
+        position: relative;
+    }
+}
+
+@media screen and (max-width: 320px) {
+    .content{
+        /*transform: scale(0.6) translateX(-8rem) translateY(-5rem);
+        transform: scale(0.6) translateX(-8rem) translateY(1rem);
+        */
+        transform: scale(0.6) translateX(-7rem) translateY(-1rem);
+        position: relative;
+    }
+}
+
+
+@media screen and (min-width: 1200px)  {
+    .content{
+        transform: scale(0.9) translateX(6rem);
+    }
+    .continue{
+        width: 130%;
+    }
+}
+
+@media screen and (min-width: 1440px)  {
+    .content{
+        transform: scale(0.9) translateX(10rem);
+    }
+    .continue{
+        width: 130%;
+    }
+}
