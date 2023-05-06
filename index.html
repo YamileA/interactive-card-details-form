@@ -25,29 +25,29 @@
         </div>
 
         <div class="card-back">
-          <span class="number-back">000</span>
+          <span class="cvc">000</span>
         </div>
         <div class="form-card-div">
           <form id="form" class="form-card" action="">
             <fieldset>
               <label for="name">CARDHOLDER NAME</label>
-              <input id="name" type="text" placeholder="e.g. Jane Appleseed" required>
-              <p class="error">Can't be blank</p>
+              <input id="name" type="text" placeholder="e.g. Jane Appleseed" >
+              <p class="error ">Wrong format, letters only</p>
               
               <label for="number">CARD NUMBER</label>
-              <input id="number" type="number" maxlength="16" placeholder="e.g. 1234 5678 9123 0000" required >
-              <p class="error">Wrong format, letters only</p>
+              <input id="number" type="text" placeholder="e.g. 1234 5678 9123 0000"  >
+              <p class="error">Wrong format, numbers only</p>
             </fieldset>
             <div class="dates">
               <label for="date" >EXP. DATE (MM/YY) </label>
               <label for="number" >CVC</label>
-              <input type="number" maxlength="2" min="1" max="12" placeholder="MM" required>
-              <input type="number" minlength="2" maxlength="2" placeholder="YY" required>
-              <input type="number" maxlength="3" placeholder="e.g. 123" required>
+              <input id="mm" type="number" placeholder="MM" >
+              <input id="yy" type="number" placeholder="YY" >
+              <input id="cvc" type="number" placeholder="e.g. 123" >
               <p class="error">Can't be blank</p>
               <p class="error">Can't be blank</p>
             </div>
-            <button id="confirm" class="confirm" type="submit" onclick="text()">Confirm</button>
+            <button id="confirm" class="confirm" type="submit" >Confirm</button>
           </form>
         
           <div class="success">
@@ -58,12 +58,12 @@
           </div>
         </div>
         <footer class="attribution">
-          <p>
+          <span>
           Challenge by 
             <a href="https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw" target="_blank">Frontend Mentor</a> 
             - Coded by
             <a href="#">Yamile Acuña</a>
-          </p>
+          </span>
         </footer>
       </div>
     </div>

@@ -24,7 +24,7 @@
         grid-area:1/1/2/2;
         align-self: flex-end;
         order: 0;
-        transform: none;
+        transform: translateX(-3rem);
     }
 
     .card-back{
