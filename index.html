@@ -35,15 +35,16 @@
               <p class="error ">Wrong format, letters only</p>
               
               <label for="number">CARD NUMBER</label>
-              <input id="number" type="text" placeholder="e.g. 1234 5678 9123 0000"  >
+              <input id="number" type="text" placeholder="e.g. 1234 5678 9123 0000" maxlength="19" >
               <p class="error">Wrong format, numbers only</p>
             </fieldset>
             <div class="dates">
-              <label for="date" >EXP. DATE (MM/YY) </label>
-              <label for="number" >CVC</label>
-              <input id="mm" type="number" placeholder="MM" >
-              <input id="yy" type="number" placeholder="YY" >
-              <input id="cvc" type="number" placeholder="e.g. 123" >
+              <label for="mm" >EXP. DATE (MM/YY) </label>
+              <label for="cvc" >CVC</label>
+              <input id="mm" type="number" placeholder="MM" maxlength="2" >
+              <input id="yy" type="number" placeholder="YY" maxlength="2">
+              <input id="cvc" type="number" placeholder="e.g. 123" minlength="3" maxlength="3" >
+              <p class="error">Can't be blank</p>
               <p class="error">Can't be blank</p>
               <p class="error">Can't be blank</p>
             </div>

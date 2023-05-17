@@ -26,7 +26,7 @@ body{
     position: relative;
     transform: scale(0.8) translateY(0.1rem);
     display: grid;
-    /*grid-gap: 2rem;*/
+    /*gap: 2rem;*/
     grid-template-rows: 1fr 1fr 0.1fr;
     justify-items: center;
 }
@@ -117,7 +117,11 @@ input {
     border-radius: 6px;
     width: 94%;
     margin: 0.5rem 0;
-    border:0.1rem solid hsl(279, 6%, 55%);
+    border:0.1rem solid hsl(270, 3%, 87%);
+}
+
+input::placeholder {
+    color: hsl(276, 5%, 80%);
 }
 
 input[type=number]::-webkit-inner-spin-button, 
@@ -126,10 +130,9 @@ input[type=number]::-webkit-outer-spin-button {
   margin: 0; 
 }
 
-input[type="number"] {
-    appearance: textfield;
+input[type="number"] {   
     -moz-appearance: textfield;
-
+    appearance: textfield;
 }
 
 /*
@@ -137,14 +140,9 @@ input:invalid:required {
     border-color: hsl(0, 100%, 66%);
 }
 
-input:valid, input:focus{
-    background:
-        linear-gradient(white, white) padding-box,
-        linear-gradient(45deg, rgb(100, 72, 254),rgb(96, 5, 148)) border-box;
-}
 */
 label{
-    font-size: 12px;
+    font-size: 15px;
     text-transform: uppercase;
     letter-spacing: 0.1rem;
     font-weight: 600;
@@ -179,8 +177,10 @@ label{
 .dates p:nth-child(6){
     grid-area: 3/1/3/3;
 }
-
 .dates p:nth-child(7){
+    grid-area: 3/1/3/3;
+}
+.dates p:nth-child(8){
     grid-area: 3/3/3/5;
 }
 
@@ -229,11 +229,16 @@ label{
 .error{
     display: none;
     padding: 0;
-    font-size: .8rem;
+    font-size: 0.8rem;
     color: hsl(0, 100%, 66%);
     margin: 0 0 1.3rem 0;
 }
 
+.valido{
+    background:
+        linear-gradient(white, white) padding-box,
+        linear-gradient(45deg, rgb(100, 72, 254),rgb(96, 5, 148)) border-box;
+}
 
 
 .attribution{
