@@ -29,49 +29,45 @@
         </div>
         <div class="form-card-div">
           <form id="form" class="form-card" action="">
-            <fieldset>
-              <label for="name">CARDHOLDER NAME</label>
-              <input id="name" type="text" placeholder="e.g. Jane Appleseed" >
-              <p class="error ">Wrong format, letters only</p>
-              
-              <label for="number">CARD NUMBER</label>
-              <input id="number" type="text" placeholder="e.g. 1234 5678 9123 0000" maxlength="19" >
-              <p class="error">Wrong format, numbers only</p>
-            </fieldset>
+            <label for="name">CARDHOLDER NAME</label>
+            <input id="name" type="text" placeholder="e.g. Jane Appleseed" required>
+            <p class="error "></p>
+            
+            <label for="number">CARD NUMBER</label>
+            <input id="number" type="text" placeholder="e.g. 1234 5678 9123 0000" on maxlength="19" >
+            <p class="error"></p>
             <div class="dates">
               <label for="mm" >EXP. DATE (MM/YY) </label>
               <label for="cvc" >CVC</label>
               <input id="mm" type="number" placeholder="MM" maxlength="2" >
               <input id="yy" type="number" placeholder="YY" maxlength="2">
               <input id="cvc" type="number" placeholder="e.g. 123" minlength="3" maxlength="3" >
-              <p class="error">Can't be blank</p>
-              <p class="error">Can't be blank</p>
-              <p class="error">Can't be blank</p>
+              <p class="error"></p>
+              <p class="error"></p>
+              <p class="error"></p>
             </div>
-            <button id="confirm" class="confirm" type="submit" >Confirm</button>
+            <button id="confirm" class="confirm" type="submit" onclick="enviar()">Confirm</button>
           </form>
-        
+          
           <div class="success">
             <img src="images/icon-complete.svg" alt="" srcset="">
             <h2> Thank you!</h2>
             <h3>We've added your card details </h3>
-            <button id="continue" class="continue confirm" type="button">Continue</button>
+            <button id="continue" class="continue confirm" type="button" onclick="continuar()">Continue</button>
           </div>
         </div>
-        <footer class="attribution">
-          <span>
-          Challenge by 
-            <a href="https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw" target="_blank">Frontend Mentor</a> 
-            - Coded by
-            <a href="#">Yamile Acuña</a>
-          </span>
-        </footer>
       </div>
+      <footer class="attribution">
+        <p>   Challenge by 
+          <a href="https://www.frontendmentor.io/challenges/interactive-card-details-form-XpS8cKZDWw" target="_blank">Frontend Mentor.</a> 
+        </p>
+        <p> Coded by
+          <a href="https://github.com/YamileA/interactive-card-details-form">Yamile Acuña ♥️ </a>
+        </p>
+      </footer>
     </div>
-    
   </main>
-  
-  
   <script src="main.js"></script>
 </body>
 </html>
+
