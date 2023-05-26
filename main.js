@@ -12,7 +12,7 @@ const mss = document.querySelectorAll(".error");
 const area_form = document.getElementById("form");
 
 var allObject = [
-    {"id" : "name", "param": nameCard, "span" : "Jane Appleseed", "expresion": /^[a-zA-Z\s]+$/,  "last_value" : "", "message" : "Wrong format, letters only", "valid" : false },
+    {"id" : "name", "param": nameCard, "span" : "Jane Appleseed", "expresion": /^[A-Za-záéíóúÁÉÍÓÚñÑüÜ\s]+$/,  "last_value" : "", "message" : "Wrong format, letters only", "valid" : false },
     {"id" : "number", "param": numberCard, "span" : "0000 0000 0000 0000","expresion": /^(([0-9]{4}\s){3}[0-9]{4})$/, "last_value" : "", "message" : "Wrong format, numbers only", "valid" : false},
     {"id" : "mm", "param": mmCard, "span": "00","expresion": /^(0?[1-9]|1[0-2])$/, "last_value" : "", "message" : "Wrong format, numbers only MM=1-12 YY=0-99", "valid" : false},
     {"id" : "yy", "param": yyCard, "span": "00", "expresion": /^(0?[1-9]|[1-9][0-9])$/, "last_value" : "", "message" : "Wrong format, numbers only MM=1-12 YY=0-99", "valid" : false},
