@@ -29,7 +29,7 @@
     .card-back{
         grid-area:2/1/2/2;
         align-self: flex-start;
-        margin-left: 60px;
+        margin-left: 70px;
         transform: none;
     }
 
