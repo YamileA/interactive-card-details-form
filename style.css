@@ -57,7 +57,7 @@ body{
 .card-back{
     display: grid;
     grid-template-rows: 2fr 1fr 2fr;
-    grid-template-columns: 5fr 2fr;
+    grid-template-columns: 8fr 2fr;
     grid-area: 1/1/2/2;
     align-items: center;
     background-image: url(images/bg-card-back.png);
@@ -66,7 +66,7 @@ body{
 
 .card-back span{
     grid-area: 2/2;
-    padding-left: 1rem;
+    /*padding-left: 1rem;*/
     padding-bottom: 0.5rem;
 }
 
@@ -79,7 +79,7 @@ body{
     grid-area:  2/1/3/5;
     font-size: 1.9rem;
     padding-left: 2rem;
-    letter-spacing: 3px;
+    letter-spacing: 2px;
     padding-top: 65px;
 }
 

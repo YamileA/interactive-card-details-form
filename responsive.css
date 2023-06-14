@@ -55,12 +55,12 @@
 
 @media screen and (min-width: 1200px)  {
     .content{
-        transform: scale(0.8) translateX(6rem);
+        transform: scale(0.9) translateX(6rem);
     }
 }
 
 @media screen and (min-width: 1440px)  {
     .content{
-        transform: scale(0.8) translateX(10rem);
+        transform: scale(1) translateX(11rem);
     }
 }

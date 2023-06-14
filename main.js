@@ -83,7 +83,6 @@ function enviar(){
             allValid += 1;
             mss[validar].setAttribute('style', 'display:none');
             mss[validar].style.display="none";
-            //mss[validar].textContent.style.display="none";
         }
     }
     if (allValid == 5){
