@@ -34,7 +34,7 @@
     }
 
     .form-card-div{
-        width: 35vw;
+        width: 30vw;
         grid-area: 1/2/3/3;
         place-content: center;
         display: grid; 

@@ -67,35 +67,46 @@ body{
 
 .card-back span{
     grid-area: 2/2;
-    /*padding-left: 1rem;*/
+    padding-left: 0.3rem;
     padding-bottom: 0.5rem;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 2px;
 }
 
 .card-front .logo{
     grid-area: 1/1/2/2;
-    margin: 20px 0 0 30px;
+    margin: 25px 0 0 30px;
 }
 
 .card-front .number{
     grid-area:  2/1/3/5;
-    font-size: 1.9rem;
+    font-size: 1.8rem;
     padding-left: 2rem;
-    letter-spacing: 2px;
+    letter-spacing: 3px;
     padding-top: 65px;
+    font-weight: 600;
 }
 
 .card-front .name{
     grid-area: 3/1/3/4;
     letter-spacing: 2px;
     text-transform: uppercase;
-    margin: 0 0 0 30px;
     display: flex;
     align-items: center;
+    font-weight: 600;
+    font-size: 0.8rem;
+    padding: 0 0 8px 32px;
 }
 
 .card-front .date{
     grid-area: 3/4/3/5;
-    margin: 15px 0 0 25px;
+    font-weight: 600;
+    font-size: 0.8rem;
+    letter-spacing: 2px;
+    display: flex;
+    align-items: center;
+    padding: 0 0 8px 30px;
 }
 
 .form-card-div{
@@ -109,9 +120,9 @@ body{
 }
 
 input {
-    font-size: 18px;
+    font-size: 16px;
     font-weight: 600;
-    padding: 0.8rem;
+    padding: 0.7rem;
     border-radius: 6px;
     width: 92%;
     border:0.08rem solid hsl(270, 3%, 87%);
@@ -179,7 +190,7 @@ label{
 .confirm{
     border-radius: 0.8rem;
     background-color: hsl(278, 68%, 11%);
-    padding: 1rem;
+    padding: 14px;
     font-size: 20px;
     font-weight: bolder;
     color: hsl(270, 3%, 87%);
